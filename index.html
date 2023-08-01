@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Design-Prac</title>
+    <!-- ======= Google Fonts ======= -->
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap">
+
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap">
+
+    <!-- ======= Normalize CSS ======= -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+
+    <!-- ======= Font Awesome ======= -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+    <!-- ======= Bootstrap ======= -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-- ======= Main CSS ======= -->
+    <link rel="stylesheet" href="CSS/master.css">
+</head>
+<body>
+    <!-- Start Settings Box -->
+    <div class="settings-box position-fixed z-3 bg-white">
+        <div class="toggle-settings position-absolute bg-white text-center">
+            <i class="fa-solid fa-gear fs-5 text-center"></i>
+        </div>
+        <div class="settings-container">
+            <div class="option-box text-center">
+                <h4 class="fw-bold">Colors</h4>
+                <ul class="color-list list-unstyled d-flex justify-content-center p-0 m-0 mt-2">
+                    <li class="active" data-color="#ff9800"></li>
+                    <li data-color="#E91E63"></li>
+                    <li data-color="#009688"></li>
+                    <li data-color="#03A9F4"></li>
+                    <li data-color="#4CAF50"></li>
+                </ul>
+            </div>
+            <div class="option-box text-center">
+                <h4 class="fw-bold m-0 mb-2">Random Backgrounds</h4>
+                <div class="random-background">
+                    <span class="yes active text-white" data-background="yes">Yes</span>
+                    <span class="no text-white" data-background="no">No</span>
+                </div>
+            </div>
+            <div class="option-box text-center">
+                <h4 class="fw-bold m-0 mb-2">Show Bullets</h4>
+                <div class="bullets-option">
+                    <span class="yes active text-white" data-display="block">Yes</span>
+                    <span class="no text-white" data-display="none">No</span>
+                </div>
+            </div>
+            <button class="reset-options border border-0 text-center d-block mx-auto">Reset Options</button>
+        </div>
+    </div>
+    <!-- End Settings Box -->
+
+    <!-- Start Nav Bullets -->
+    <div class="nav-bullets">
+        <div class="bullet" data-section="about"></div>
+        <div class="bullet" data-section="skills"></div>
+        <div class="bullet" data-section="gallary"></div>
+        <div class="bullet" data-section="timeline"></div>
+        <div class="bullet" data-section="features"></div>
+        <div class="bullet" data-section="testimonials"></div>
+    </div>
+    <!-- End Nav Bullets -->
+
+    <!-- Start Landing Page -->
+    <div class="landing-page">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header-area py-4">
+                <div class="logo pt-1 pt-md-0">Special Design</div>
+                <div class="links-container">
+                    <ul class="links">
+                        <li><a href="#about" data-section="about">About</a></li>
+                        <li><a href="#skills" data-section="skills">Skills</a></li>
+                        <li><a href="#gallary" data-section="gallery">Gallery</a></li>
+                        <li><a href="#timeline" data-section="timeline">Timeline</a></li>
+                        <li><a href="#features" data-section="features">Features</a></li>
+                        <li><a href="#testimonials" data-section="testimonials">Testimonials</a></li>
+                    </ul>
+                    <button class="toggle-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text">
+            <h1>We Are <span>Creative</span> Agency</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste</p>
+        </div>
+    </div>
+    <!-- End Landing Page -->
+
+    <!-- Start About -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row g-3 align-items-center justify-content-evenly">
+                <div class="col-md-6">
+                    <div class="info-box text-center text-md-start">
+                        <h3 class="fw-bold">About Us</h3>
+                        <p class="m-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Perferendis ipsum, tenetur dolores esse magni ratione 
+                            distinctio! Quod iusto neque fuga, maxime quos nostrum 
+                            quibusdam dicta deserunt blanditiis non voluptate id?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="info-img">
+                        <img src="Images/about-us.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Strat Skills -->
+    <div class="skills" id="skills">
+        <div class="container">
+            <h2 class="fw-bold text-center">Skills</h2>
+            <div class="skill-box bg-white d-flex align-items-center">
+                <div class="skill-name fw-bold">HTML</div>
+                <div class="skill-progress ms-3 w-100 position-relative">
+                    <span class="position-absolute h-100" data-progress="80%"></span>
+                </div>
+            </div>
+            <div class="skill-box bg-white d-flex align-items-center">
+                <div class="skill-name fw-bold">CSS</div>
+                <div class="skill-progress ms-3 w-100 position-relative">
+                    <span class="position-absolute h-100" data-progress="50%"></span>
+                </div>
+            </div>
+            <div class="skill-box bg-white d-flex align-items-center">
+                <div class="skill-name fw-bold">JAVASCRIPT</div>
+                <div class="skill-progress ms-3 w-100 position-relative">
+                    <span class="position-absolute h-100" data-progress="70%"></span>
+                </div>
+            </div>
+            <div class="skill-box bg-white d-flex align-items-center">
+                <div class="skill-name fw-bold">PYTHON</div>
+                <div class="skill-progress ms-3 w-100 position-relative">
+                    <span class="position-absolute h-100" data-progress="39%"></span>
+                </div>
+            </div>
+            <div class="skill-box bg-white d-flex align-items-center">
+                <div class="skill-name fw-bold">PHP</div>
+                <div class="skill-progress ms-3 w-100 position-relative">
+                    <span class="position-absolute h-100" data-progress="60%"></span>
+                </div>
+            </div>
+            <div class="skill-box bg-white d-flex align-items-center">
+                <div class="skill-name fw-bold">MYSQL</div>
+                <div class="skill-progress ms-3 w-100 position-relative">
+                    <span class="position-absolute h-100" data-progress="29%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Skills -->
+
+    <!-- Start Gallary -->
+    <div class="gallary" id="gallary">
+        <div class="container">
+            <h2 class="fw-bold text-center">Gallary</h2>
+            <div class="img-box text-center">
+                <img src="Images/01.jpg" alt="Img-One">
+                <img src="Images/02.jpg" alt="Img-Two">
+                <img src="Images/03.jpg" alt="Img-Three">
+                <img src="Images/04.jpg" alt="Img-Four">
+                <img src="Images/05.jpg" alt="Img-Five">
+                <img src="Images/06.png" alt="">
+                <img src="Images/07.jpg" alt="">
+                <img src="Images/08.jpg" alt="">
+                <img src="Images/09.jpg" alt="">
+                <img src="Images/10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End Gallary -->
+
+    <!-- Strat TimeLine -->
+    <div class="timeline" id="timeline">
+        <div class="container">
+            <div class="timeline-content position-relative">
+                <div class="year text-white z-1 fw-bold">2021</div>
+                <div class="left">
+                    <div class="content bg-white">
+                        <h4 class="fw-bold m-0 mb-2">Test Heading</h4>
+                        <p class="m-0 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit explicabo illum excepturi incidunt, expedita iure quibusdam illo, repellat at quia officia et nobis earum ab adipisci nihil ipsum non consectetur?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content bg-white">
+                        <h4 class="fw-bold m-0 mb-2">Test Heading</h4>
+                        <p class="m-0 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit explicabo illum excepturi incidunt, expedita iure quibusdam illo, repellat at quia officia et nobis earum ab adipisci nihil ipsum non consectetur?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="year text-white z-1 fw-bold">2022</div>
+                <div class="left">
+                    <div class="content bg-white">
+                        <h4 class="fw-bold m-0 mb-2">Test Heading</h4>
+                        <p class="m-0 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit explicabo illum excepturi incidunt, expedita iure quibusdam illo, repellat at quia officia et nobis earum ab adipisci nihil ipsum non consectetur?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="left">
+                    <div class="content bg-white">
+                        <h4 class="fw-bold m-0 mb-2">Test Heading</h4>
+                        <p class="m-0 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit explicabo illum excepturi incidunt, expedita iure quibusdam illo, repellat at quia officia et nobis earum ab adipisci nihil ipsum non consectetur?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="year text-white z-1 fw-bold">2023</div>
+                <div class="right">
+                    <div class="content bg-white">
+                        <h4 class="fw-bold m-0 mb-2">Test Heading</h4>
+                        <p class="m-0 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit explicabo illum excepturi incidunt, expedita iure quibusdam illo, repellat at quia officia et nobis earum ab adipisci nihil ipsum non consectetur?</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- End TimeLine -->
+
+    <!-- Strat Feature -->
+    <div class="features" id="features">
+        <div class="container">
+            <h2 class="fw-bold text-center">Features</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="holder text-center">
+                        <img src="Images/programming.svg" alt="" class="img-fluid">
+                        <h4 class="position-relative fw-bold mx-0 mt-3 mb-4">Development</h4>
+                        <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="holder text-center">
+                        <img src="Images/advertising.svg" alt="" class="img-fluid">
+                        <h4 class="position-relative fw-bold mx-0 mt-3 mb-4">Marketing</h4>
+                        <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="holder text-center">
+                        <img src="Images/hosting-icon.svg" alt="" class="img-fluid">
+                        <h4 class="position-relative fw-bold mx-0 mt-3 mb-4">Hosting</h4>
+                        <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="holder text-center">
+                        <img src="Images/mobile-app.svg" alt="" class="img-fluid">
+                        <h4 class="position-relative fw-bold mx-0 mt-3 mb-4">Mobile Develope</h4>
+                        <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="holder text-center">
+                        <img src="Images/graphic-design.svg" alt="" class="img-fluid">
+                        <h4 class="position-relative fw-bold mx-0 mt-3 mb-4">Cloud and Servers</h4>
+                        <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="holder text-center">
+                        <img src="Images/web-design.svg" alt="" class="img-fluid">
+                        <h4 class="position-relative fw-bold mx-0 mt-3 mb-4">Seo</h4>
+                        <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Feature -->
+
+    <!-- Start Testimonias -->
+    <div class="testimonials position-relative" id="testimonials">
+            <div class="container">
+                <h2 class="fw-bold text-white text-center text-md-start">Testimonials</h2>
+                <div class="row gy-3">
+                    <div class="col-md-4">
+                        <div class="holder bg-white">
+                            <p class="m-0 mb-2">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                            <div class="d-lg-flex align-items-center">
+                                <div class="img-holder text-center text-lg-start me-lg-3 mb-2 mb-lg-0">
+                                    <img src="Images/team-01.png" alt="" class="rounded-circle">
+                                </div>
+                                <div class="box-about d-flex flex-column text-center text-lg-start">
+                                    <span class="fw-bold mb-1">Ahmed Mosaad</span>
+                                    <span>CEO At Company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="holder bg-white">
+                            <p class="m-0 mb-2">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                            <div class="d-lg-flex align-items-center">
+                                <div class="img-holder text-center text-lg-start me-lg-3 mb-2 mb-lg-0">
+                                    <img src="Images/team-02.png" alt="" class="rounded-circle">
+                                </div>
+                                <div class="box-about d-flex flex-column text-center text-lg-start">
+                                    <span class="fw-bold mb-1">Maya Hassan</span>
+                                    <span>CEO At Company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="holder bg-white">
+                            <p class="m-0 mb-2">Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                            <div class="d-lg-flex align-items-center">
+                                <div class="img-holder text-center text-lg-start me-lg-3 mb-2 mb-lg-0">
+                                    <img src="Images/team-05.png" alt="" class="rounded-circle">
+                                </div>
+                                <div class="box-about d-flex flex-column text-center text-lg-start">
+                                    <span class="fw-bold mb-1">Sara Emad</span>
+                                    <span>CEO At Company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+    </div>
+    <!-- End Testimonias -->
+
+    <!-- Start Contact -->
+    <div class="contact">
+        <div class="container position-relative z-1">
+            <h2 class="fw-bold text-center">Contact Us</h2>
+            <div class="input-container d-flex justify-content-center flex-column flex-md-row">
+                <div class="left d-flex flex-column me-md-3">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Phone">
+                    <input type="text" placeholder="Your Email">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="right d-flex flex-column">
+                    <textarea placeholder="Your Mesaage"></textarea>
+                    <input type="text" value="Send" class="send border border-0 text-center text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
+    <div class="footer text-light">
+        <div class="container">
+            <div class="row gx-2 gy-3">
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="second-font main-color">Special Design</h3>
+                    <div class="d-flex flex-column mb-4 second-font">
+                        <span>A108 Adam Street</span>
+                        <span>NY 535022, USA</span>
+                    </div>
+                    <div class="second-font mb-4">
+                        <p class="m-0"><span class="fw-bold">Phone: </span>+1 5589 55488 55</p>
+                        <p class="m-0"><span class="fw-bold">Email: </span>info@example.com</p>
+                    </div>
+                    <ul class="list-unstyled d-flex">
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-skype"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h4 class="second-font main-color">Useful Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="d-flex">
+                            <div class="icon"><i class="fa-solid fa-angle-right me-1"></i></div>
+                            About
+                        </li>
+                        <li class="d-flex">
+                            <div class="icon"><i class="fa-solid fa-angle-right me-1"></i></div>
+                            Skills
+                        </li>
+                        <li class="d-flex">
+                            <div class="icon"><i class="fa-solid fa-angle-right me-1"></i></div>
+                            Gallery
+                        </li>
+                        <li class="d-flex">
+                            <div class="icon"><i class="fa-solid fa-angle-right me-1"></i></div>
+                            Timeline
+                        </li>
+                        <li class="d-flex">
+                            <div class="icon"><i class="fa-solid fa-angle-right me-1"></i></div>
+                            Features
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="second-font main-color">Our Services</h4>
+                    <ul class="list-unstyled">
+                        <li class="d-flex">
+                            <div class="icon"><i class="fa-solid fa-angle-right me-1"></i></div>
+                            Development
+                        </li>
+                        <li class="d-flex">
+                            <div class="icon"><i class="fa-solid fa-angle-right me-1"></i></div>
+                            Marketing
+                        </li>
+                        <li class="d-flex">
+                            <div class="icon"><i class="fa-solid fa-angle-right me-1"></i></div>
+                            Hosting
+                        </li>
+                        <li class="d-flex">
+                            <div class="icon"><i class="fa-solid fa-angle-right me-1"></i></div>
+                            Mobile Develope
+                        </li>
+                        <li class="d-flex">
+                            <div class="icon"><i class="fa-solid fa-angle-right me-1"></i></div>
+                            Cloud and Servers
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="second-font main-color">Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <div class="input-data position-relative mt-4">
+                        <input class="w-100" type="text">
+                        <button class="position-absolute">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- <script src="JS/all.min.js"></script> -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/master.js"></script>
+</body>
+</html>
